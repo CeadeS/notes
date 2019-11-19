@@ -1,0 +1,15 @@
+# slow build
+>>> print(torch.__config__.parallel_info())
+ATen/Parallel:
+        at::get_num_threads() : 10
+        at::get_num_interop_threads() : 10
+OpenMP 201511 (a.k.a. OpenMP 4.5)
+        omp_get_max_threads() : 10
+Intel(R) Math Kernel Library Version 2019.0.4 Product Build 20190411 for Intel(R) 64 architecture applications
+        mkl_get_max_threads() : 10
+Intel(R) MKL-DNN v0.21.1 (Git Hash 7d2fd500bc78936d1d648ca713b901012f470dbc)
+std::thread::hardware_concurrency() : 20
+Environment variables:
+        OMP_NUM_THREADS : [not set]
+        MKL_NUM_THREADS : [not set]
+ATen parallel backend: OpenMP
