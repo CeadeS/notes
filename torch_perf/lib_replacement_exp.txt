@@ -1,0 +1,87 @@
+#replacement experiment libgomp-7c85b1e2.so.1 replaced with libiomp5.so
+/usr/bin/python3.6
+[anon]
+[heap]
+/usr/local/lib/python3.6/dist-packages/torch/lib/libtorch.so
+/usr/lib/python3/dist-packages/numpy/random/mtrand.cpython-36m-x86_64-linux-gnu.so
+/usr/lib/python3/dist-packages/numpy/fft/fftpack_lite.cpython-36m-x86_64-linux-gnu.so
+/usr/lib/python3/dist-packages/numpy/linalg/_umath_linalg.cpython-36m-x86_64-linux-gnu.so
+/usr/lib/x86_64-linux-gnu/openblas/liblapack.so.3
+/usr/lib/python3/dist-packages/numpy/linalg/lapack_lite.cpython-36m-x86_64-linux-gnu.so
+/usr/lib/x86_64-linux-gnu/libcrypto.so.1.1
+/usr/lib/python3.6/lib-dynload/_hashlib.cpython-36m-x86_64-linux-gnu.so
+/usr/lib/x86_64-linux-gnu/libffi.so.6.0.4
+/usr/lib/python3.6/lib-dynload/_ctypes.cpython-36m-x86_64-linux-gnu.so
+/usr/lib/python3/dist-packages/numpy/core/umath.cpython-36m-x86_64-linux-gnu.so
+/usr/lib/x86_64-linux-gnu/libssl.so.1.1
+/usr/lib/python3.6/lib-dynload/_ssl.cpython-36m-x86_64-linux-gnu.so
+/usr/lib/python3.6/lib-dynload/_multiprocessing.cpython-36m-x86_64-linux-gnu.so
+/usr/local/lib/python3.6/dist-packages/torch/lib/libgomp-7c85b1e2.so.1
+/usr/local/lib/python3.6/dist-packages/torch/lib/libcudart-1b201d85.so.10.1
+/usr/local/lib/python3.6/dist-packages/torch/lib/libnvToolsExt-3965bdd0.so.1
+/usr/local/lib/python3.6/dist-packages/torch/lib/libc10.so
+/usr/local/lib/python3.6/dist-packages/torch/lib/libc10_cuda.so
+/lib/x86_64-linux-gnu/librt-2.27.so
+/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25
+/usr/local/lib/python3.6/dist-packages/torch/lib/libtorch_python.so
+/usr/local/lib/python3.6/dist-packages/torch/lib/libshm.so
+/usr/local/lib/python3.6/dist-packages/torch/_C.cpython-36m-x86_64-linux-gnu.so
+/lib/x86_64-linux-gnu/libgcc_s.so.1
+/usr/lib/x86_64-linux-gnu/libquadmath.so.0.0.0
+/usr/lib/x86_64-linux-gnu/libgfortran.so.4.0.0
+/usr/lib/x86_64-linux-gnu/libopenblasp-r0.2.20.so
+/usr/lib/x86_64-linux-gnu/openblas/libblas.so.3
+/usr/lib/python3/dist-packages/numpy/core/multiarray.cpython-36m-x86_64-linux-gnu.so
+/usr/lib/python3.6/lib-dynload/_opcode.cpython-36m-x86_64-linux-gnu.so
+/usr/local/lib/python3.6/dist-packages/psutil/_psutil_posix.cpython-36m-x86_64-linux-gnu.so
+/usr/local/lib/python3.6/dist-packages/psutil/_psutil_linux.cpython-36m-x86_64-linux-gnu.so
+/lib/x86_64-linux-gnu/liblzma.so.5.2.2
+/usr/lib/python3.6/lib-dynload/_lzma.cpython-36m-x86_64-linux-gnu.so
+/lib/x86_64-linux-gnu/libbz2.so.1.0.4
+/usr/lib/python3.6/lib-dynload/_bz2.cpython-36m-x86_64-linux-gnu.so
+/lib/x86_64-linux-gnu/libm-2.27.so
+/lib/x86_64-linux-gnu/libz.so.1.2.11
+/lib/x86_64-linux-gnu/libexpat.so.1.6.7
+/lib/x86_64-linux-gnu/libutil-2.27.so
+/lib/x86_64-linux-gnu/libdl-2.27.so
+/lib/x86_64-linux-gnu/libpthread-2.27.so
+/lib/x86_64-linux-gnu/libc-2.27.so
+/lib/x86_64-linux-gnu/ld-2.27.so
+[stack]
+[vvar]
+[vdso]
+[vsyscall]
+
+#working libgomp-7c85b1e2.so.1 replaced with libiomp5.so 
+# 9 secs per epoch
+ATen/Parallel:
+        at::get_num_threads() : 40
+        at::get_num_interop_threads() : 40
+OpenMP 201511 (a.k.a. OpenMP 4.5)
+        omp_get_max_threads() : 40
+Intel(R) Math Kernel Library Version 2019.0.4 Product Build 20190411 for Intel(R) 64 architecture applications
+        mkl_get_max_threads() : 40
+Intel(R) MKL-DNN v0.20.5 (Git Hash 0125f28c61c1f822fd48570b4c1066f96fcb9b2e)
+std::thread::hardware_concurrency() : 80
+Environment variables:
+        OMP_NUM_THREADS : [not set]
+        MKL_NUM_THREADS : [not set]
+ATen parallel backend: OpenMP
+
+
+#not working
+# 3 min per epoch
+ATen/Parallel:
+        at::get_num_threads() : 40
+        at::get_num_interop_threads() : 40
+OpenMP 201511 (a.k.a. OpenMP 4.5)
+        omp_get_max_threads() : 40
+Intel(R) Math Kernel Library Version 2019.0.4 Product Build 20190411 for Intel(R) 64 architecture applications
+        mkl_get_max_threads() : 40
+Intel(R) MKL-DNN v0.20.5 (Git Hash 0125f28c61c1f822fd48570b4c1066f96fcb9b2e)
+std::thread::hardware_concurrency() : 80
+Environment variables:
+        OMP_NUM_THREADS : [not set]
+        MKL_NUM_THREADS : [not set]
+ATen parallel backend: OpenMP
+
