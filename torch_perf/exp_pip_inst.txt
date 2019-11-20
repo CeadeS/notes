@@ -1,0 +1,90 @@
+/usr/bin/python3.6
+[anon]
+[heap]
+/usr/local/lib/python3.6/dist-packages/torch/lib/libtorch.so
+/usr/lib/python3/dist-packages/numpy/random/mtrand.cpython-36m-x86_64-linux-gnu.so
+/usr/lib/python3/dist-packages/numpy/fft/fftpack_lite.cpython-36m-x86_64-linux-gnu.so
+/usr/lib/python3/dist-packages/numpy/linalg/_umath_linalg.cpython-36m-x86_64-linux-gnu.so
+/usr/lib/x86_64-linux-gnu/openblas/liblapack.so.3
+/usr/lib/python3/dist-packages/numpy/linalg/lapack_lite.cpython-36m-x86_64-linux-gnu.so
+/usr/lib/x86_64-linux-gnu/libcrypto.so.1.1
+/usr/lib/python3.6/lib-dynload/_hashlib.cpython-36m-x86_64-linux-gnu.so
+/usr/lib/x86_64-linux-gnu/libffi.so.6.0.4
+/usr/lib/python3.6/lib-dynload/_ctypes.cpython-36m-x86_64-linux-gnu.so
+/usr/lib/python3/dist-packages/numpy/core/umath.cpython-36m-x86_64-linux-gnu.so
+/usr/lib/x86_64-linux-gnu/libssl.so.1.1
+/usr/lib/python3.6/lib-dynload/_ssl.cpython-36m-x86_64-linux-gnu.so
+/usr/lib/python3.6/lib-dynload/_multiprocessing.cpython-36m-x86_64-linux-gnu.so
+/usr/local/lib/python3.6/dist-packages/torch/lib/libgomp-7c85b1e2.so.1
+/usr/local/lib/python3.6/dist-packages/torch/lib/libcudart-1b201d85.so.10.1
+/usr/local/lib/python3.6/dist-packages/torch/lib/libnvToolsExt-3965bdd0.so.1
+/usr/local/lib/python3.6/dist-packages/torch/lib/libc10.so
+/usr/local/lib/python3.6/dist-packages/torch/lib/libc10_cuda.so
+/lib/x86_64-linux-gnu/librt-2.27.so
+/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25
+/usr/local/lib/python3.6/dist-packages/torch/lib/libtorch_python.so
+/usr/local/lib/python3.6/dist-packages/torch/lib/libshm.so
+/usr/local/lib/python3.6/dist-packages/torch/_C.cpython-36m-x86_64-linux-gnu.so
+/lib/x86_64-linux-gnu/libgcc_s.so.1
+/usr/lib/x86_64-linux-gnu/libquadmath.so.0.0.0
+/usr/lib/x86_64-linux-gnu/libgfortran.so.4.0.0
+/usr/lib/x86_64-linux-gnu/libopenblasp-r0.2.20.so
+/usr/lib/x86_64-linux-gnu/openblas/libblas.so.3
+/usr/lib/python3/dist-packages/numpy/core/multiarray.cpython-36m-x86_64-linux-gnu.so
+/usr/lib/python3.6/lib-dynload/_opcode.cpython-36m-x86_64-linux-gnu.so
+/usr/local/lib/python3.6/dist-packages/psutil/_psutil_posix.cpython-36m-x86_64-linux-gnu.so
+/usr/local/lib/python3.6/dist-packages/psutil/_psutil_linux.cpython-36m-x86_64-linux-gnu.so
+/lib/x86_64-linux-gnu/liblzma.so.5.2.2
+/usr/lib/python3.6/lib-dynload/_lzma.cpython-36m-x86_64-linux-gnu.so
+/lib/x86_64-linux-gnu/libbz2.so.1.0.4
+/usr/lib/python3.6/lib-dynload/_bz2.cpython-36m-x86_64-linux-gnu.so
+/lib/x86_64-linux-gnu/libm-2.27.so
+/lib/x86_64-linux-gnu/libz.so.1.2.11
+/lib/x86_64-linux-gnu/libexpat.so.1.6.7
+/lib/x86_64-linux-gnu/libutil-2.27.so
+/lib/x86_64-linux-gnu/libdl-2.27.so
+/lib/x86_64-linux-gnu/libpthread-2.27.so
+/lib/x86_64-linux-gnu/libc-2.27.so
+/lib/x86_64-linux-gnu/ld-2.27.so
+[vvar]
+[vdso]
+[stack]
+[vsyscall]
+ATen/Parallel:
+        at::get_num_threads() : 40
+        at::get_num_interop_threads() : 40
+OpenMP 201511 (a.k.a. OpenMP 4.5)
+        omp_get_max_threads() : 40
+Intel(R) Math Kernel Library Version 2019.0.4 Product Build 20190411 for Intel(R) 64 architecture applications
+        mkl_get_max_threads() : 40
+Intel(R) MKL-DNN v0.20.5 (Git Hash 0125f28c61c1f822fd48570b4c1066f96fcb9b2e)
+std::thread::hardware_concurrency() : 80
+Environment variables:
+        OMP_NUM_THREADS : [not set]
+        MKL_NUM_THREADS : [not set]
+ATen parallel backend: OpenMP
+
+python3 rnn.py
+
+['data/names/Arabic.txt', 'data/names/Chinese.txt', 'data/names/Czech.txt', 'data/names/Dutch.txt', 'data/names/English.txt', 'data/names/French.txt', 'data/names/German.txt', 'data/names/Greek.txt', 'data/names/Irish.txt', 'data/names/Italian.txt', 'data/names/Japanese.txt', 'data/names/Korean.txt', 'data/names/Polish.txt', 'data/names/Portuguese.txt', 'data/names/Russian.txt', 'data/names/Scottish.txt', 'data/names/Spanish.txt', 'data/names/Vietnamese.txt']
+tensor([[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+         0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 1.,
+         0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+         0., 0., 0.]])
+torch.Size([5, 1, 57])
+tensor([[-2.8444, -2.8555, -2.8168, -2.9324, -2.8465, -2.8465, -2.9308, -2.9548,
+         -2.8470, -2.9817, -2.8482, -2.9566, -2.9368, -2.9631, -2.8321, -2.8717,
+         -2.9033, -2.8823]], grad_fn=<LogSoftmaxBackward>)
+('Czech', 2)
+category = Portuguese / line = Nunes
+category = German / line = Von brandt
+category = Greek / line = Taflambas
+category = English / line = Stuart
+category = Japanese / line = Ibuka
+category = German / line = Faust
+category = Greek / line = Tsahalis
+category = Portuguese / line = Garcia
+category = Russian / line = Gagemeister
+category = Greek / line = Patrianakos
+5000 5% (1m 25s) 2.0129 Yap / Vietnamese w (Chinese)
+...
